@@ -70,7 +70,7 @@ public:
 	int MaxHealth;
 
 	UFUNCTION(BlueprintCallable)
-	void PlayerDamaged(float Damage);
+	void PlayerDamaged(int Damage);
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayerDied();

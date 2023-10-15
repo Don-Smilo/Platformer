@@ -71,7 +71,7 @@ void APlatformerCharacter::BeginPlay()
 	}
 }
 
-void APlatformerCharacter::PlayerDamaged(float Damage)
+void APlatformerCharacter::PlayerDamaged(int Damage)
 {
 	Health -= Damage;
 	if (Health <= 0)
