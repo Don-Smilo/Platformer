@@ -66,6 +66,11 @@ void APlatformerCharacter::BeginPlay()
 	}
 }
 
+void APlatformerCharacter::PlayerDamaged(float Damage)
+{
+	this->Health -= Damage;
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 
