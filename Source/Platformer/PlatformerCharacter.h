@@ -40,6 +40,7 @@ class APlatformerCharacter : public ACharacter
 public:
 	APlatformerCharacter();
 	
+	~APlatformerCharacter();
 
 protected:
 
@@ -74,5 +75,8 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void PlayerDied();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void PlayerWon();
 };
 
