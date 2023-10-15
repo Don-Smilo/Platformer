@@ -56,11 +56,6 @@ APlatformerCharacter::APlatformerCharacter()
 	Health = MaxHealth;
 }
 
-APlatformerCharacter::~APlatformerCharacter()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Character destroyed"));
-}
-
 void APlatformerCharacter::BeginPlay()
 {
 	// Call the base class  

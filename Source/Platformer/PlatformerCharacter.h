@@ -39,8 +39,6 @@ class APlatformerCharacter : public ACharacter
 
 public:
 	APlatformerCharacter();
-	
-	~APlatformerCharacter();
 
 protected:
 
@@ -73,7 +71,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void PlayerDamaged(int Damage);
 
-	UFUNCTION(BlueprintImplementableEvent)
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void PlayerDied();
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
