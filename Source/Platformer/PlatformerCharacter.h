@@ -64,10 +64,10 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	UPROPERTY(BlueprintReadOnly)
-	float Health;
+	int Health;
 	
 	UPROPERTY(BlueprintReadOnly)
-	float MaxHealth;
+	int MaxHealth;
 
 	UFUNCTION(BlueprintCallable)
 	void PlayerDamaged(float Damage);

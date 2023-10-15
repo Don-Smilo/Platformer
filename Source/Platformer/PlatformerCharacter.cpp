@@ -52,7 +52,7 @@ APlatformerCharacter::APlatformerCharacter()
 
 
 	// Default health values
-	MaxHealth = 100.f;
+	MaxHealth = 100;
 	Health = MaxHealth;
 }
 
@@ -73,7 +73,11 @@ void APlatformerCharacter::BeginPlay()
 
 void APlatformerCharacter::PlayerDamaged(float Damage)
 {
-	this->Health -= Damage;
+	Health -= Damage;
+	if (Health <= 0)
+	{
+		PlayerDied();
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
