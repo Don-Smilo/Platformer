@@ -1,4 +1,4 @@
-# Test task
+# Test task for Lesta Games Academy
 
 ## Start and finish
 Player starts on a big platform and must reach to the finish. Аfter the finish, the time for which the player completed the level is shown.
